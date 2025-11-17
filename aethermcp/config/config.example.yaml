@@ -1,0 +1,112 @@
+# AetherMCP Configuration Example
+# Copy this to config.yaml and fill in your settings
+
+# General settings
+timeout: 60.0  # Request timeout in seconds
+max_retries: 3  # Maximum retry attempts
+
+# MCP Servers
+servers:
+  # LLM Servers
+  - name: claude_server
+    category: llm_servers
+    endpoint: https://api.anthropic.com/v1
+    capabilities:
+      - name: generate
+        description: Generate text completion
+        parameters:
+          prompt: string
+          temperature: float
+          max_tokens: int
+        returns:
+          text: string
+          usage: object
+      - name: analyze_security
+        description: Analyze security vulnerabilities
+        parameters:
+          code: string
+          context: string
+        returns:
+          vulnerabilities: array
+          severity: string
+    strengths:
+      - validation_rigor
+      - security_analysis
+      - ethical_reasoning
+    cost_per_call: 0.015
+    auth_required: true
+    metadata:
+      api_key_env: ANTHROPIC_API_KEY
+      model: claude-sonnet-4-5-20250929
+
+  - name: chatgpt_server
+    category: llm_servers
+    endpoint: https://api.openai.com/v1
+    capabilities:
+      - name: generate
+        description: Generate text completion
+        parameters:
+          prompt: string
+          temperature: float
+          max_tokens: int
+        returns:
+          text: string
+          usage: object
+    strengths:
+      - meta_coherence
+      - logical_refinement
+      - structured_thinking
+    cost_per_call: 0.010
+    auth_required: true
+    metadata:
+      api_key_env: OPENAI_API_KEY
+      model: gpt-4o
+
+# Templates (optional - built-in templates are always available)
+templates:
+  # Add custom templates here
+  # Example:
+  # - name: custom_workflow
+  #   description: Custom workflow description
+  #   when_to_use: When to use this workflow
+  #   steps:
+  #     - name: step1
+  #       description: First step
+  #       servers: [claude_server]
+  #       tool: generate
+  #       parameters: {}
+
+# Governance
+governance:
+  # Cognitive Guardian settings
+  cognitive_guardian:
+    enabled: true
+    operator_id: default_operator
+    alert_thresholds:
+      warning: 2.0  # 2-sigma
+      critical: 3.0  # 3-sigma
+
+  # Sentinels
+  sentinels:
+    cost_sentinel:
+      enabled: true
+      default_budget: 100.0  # USD
+
+    security_sentinel:
+      enabled: true
+
+    validation_sentinel:
+      enabled: true
+      min_confidence: 0.80
+
+# Provenance
+provenance:
+  enabled: true
+  storage_backend: memory  # Options: memory, sqlite, postgres
+  export_format: json  # Options: json, yaml
+
+# Logging
+logging:
+  level: INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: logs/aethermcp.log

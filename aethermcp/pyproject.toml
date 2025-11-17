@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aethermcp"
+version = "7.0.0"
+description = "AI Exploration Framework - MCP Execution Environment"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Aetheris Consulting", email = "info@aetheris-consulting.com"}
+]
+keywords = ["ai", "mcp", "orchestration", "llm", "framework"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://aetheris-consulting.github.io"
+Documentation = "https://docs.aetheris-consulting.com/aethermcp"
+Repository = "https://github.com/aetheris-consulting/aethermcp"
+Issues = "https://github.com/aetheris-consulting/aethermcp/issues"
+
+[tool.setuptools]
+packages = ["aethermcp"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310', 'py311', 'py312']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov=aethermcp --cov-report=html --cov-report=term"
