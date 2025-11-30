@@ -35,4 +35,4 @@ and safe by design.
 Creative Commons BY-SA 4.0
 
 ---
-**Contact:** hello@doc-project.org
+**Contact:** aetheris.consulting@gmail.com
