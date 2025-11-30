@@ -1,38 +1,78 @@
 
-# 🧠 D.O.C. Project — Open Source AI Operating System
+# Thomas G. — Data & AI Systems Architect
 
-**The Data Operations Center (D.O.C.)** is an open-source AI-native platform that connects and orchestrates intelligence
-across all domains — from individuals to enterprises — using modular AI layers and trust-first compliance.
-
-## 🚀 Quick Start
-
-1. Clone or fork this repository.
-2. Open `index.html` in your browser — it's a static site, no backend required.
-3. To host on **GitHub Pages**:
-   - Go to **Settings → Pages**
-   - Under "Source", choose `main branch / (root)` → Save.
-   - Visit: `https://yourusername.github.io`
-
-## 🧱 Architecture Overview
-
-| Layer | Name | Purpose |
-|-------|------|----------|
-| L0 | Compute & Deployment | Flexible on-prem/cloud execution |
-| L1 | AI Orchestration | Multi-model routing (Haiku/Sonnet) |
-| L2 | MCP Ecosystem | Smart data connectors (integration) |
-| L3 | AI Gauntlet | Validation, trust, compliance |
-| L4 | Core Platform | Query, audit, scheduler, RBAC |
-| L5 | Applications | Intelligence modules for every domain |
-
-## 🌍 Vision
-
-> "Everything is an organization. Everyone deserves AI that serves them."
-
-D.O.C. scales from **1 to 1,000,000 people**, providing the same intelligence layer — contextual, auditable,
-and safe by design.
-
-## 🧩 License
-Creative Commons BY-SA 4.0
+Designing AI-native systems that treat **everything as an organization** and **every workflow as architecture**.
 
 ---
-**Contact:** aetheris.consulting@gmail.com
+
+## 🎯 Current Mission
+
+Build and deploy AI-native operating systems that help individuals, teams, and orgs:
+
+- Navigate complexity
+- Automate repeatable workflows
+- Keep humans in the strategic loop
+
+---
+
+## 🧠 Focus Areas
+
+- **AI Systems & Orchestration** – multi-model stacks, small + large model pairing, MCP ecosystems
+- **Data & Analytics** – SQL, BI, workflow telemetry, decision support
+- **Operational Design** – playbooks, runbooks, failure modes, and “ops lens” thinking
+
+---
+
+## 🚀 Flagship Project — The D.O.C. Project
+
+The **Data Operations Center (D.O.C.)** is an open-source AI-native operating system that unifies intelligence across security, operations, business, and logistics using a modular, two-tier AI orchestration model.
+
+- Two-tier AI model for cost-efficient intelligence  
+- AI Gauntlet with trust & validation layers  
+- Modular MCP integration for any data source  
+- Compliance-aware and auditable by design  
+- Scales from individual → enterprise → government  
+
+[View the D.O.C. repository](https://github.com/aetheris-consulting) <!-- update to exact repo link -->
+
+---
+
+## 📚 Learning & Tooling Pipeline
+
+Actively leveling up:
+
+- **WGU** – Business / data & operations focused coursework
+- **Data 365** – Applied data analyst paths
+- **Coursera** – SQL for Data Analyst, BI, and workflow-focused courses
+
+I treat each course as a **system component**:
+- Inputs: concepts, labs, notes
+- Outputs: repeatable workflows, playbooks, and portfolio artifacts
+
+---
+
+## 🧩 AEF-OS & Workflow Architecture
+
+I also work on **AEF-OS (Adaptive Ethical Framework – Operating System)**:
+
+- Everything-as-an-Organization (EAO) ontology  
+- Task-as-Architecture: every task mapped as a node in a larger workflow graph  
+- Drift tracking, observer personas, and controlled hallucination sandboxes  
+
+This GitHub Pages site will eventually host:
+
+- AEF-OS specs & diagrams  
+- D.O.C. implementation notes  
+- Playbooks and templates for real-world use
+
+---
+
+## 🔗 Links & Contact
+
+- GitHub: [@aetheris-consulting](https://github.com/aetheris-consulting)
+- Email: `aetheris.consulting@gmail.com
+- 
+
+---
+
+© 2025 Thomas G. | Aetheris Consulting
